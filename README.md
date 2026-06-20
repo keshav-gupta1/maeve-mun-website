@@ -13,7 +13,7 @@ Fast options:
 1. Upload this folder to Netlify and deploy as a static site.
 2. Or push the folder to GitHub and import it into Vercel.
 3. Add your custom domain if you have one.
-4. Update `https://maevemun.org/` in `index.html`, `robots.txt`, and `sitemap.xml` to your real domain.
+4. The current live URL is `https://6a36f218b9fdc40780717011--heroic-valkyrie-a3ca7f.netlify.app/`.
 5. Add the live site to Google Search Console.
 6. Submit `/sitemap.xml` for indexing.
 
