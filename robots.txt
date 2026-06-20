@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://6a36f218b9fdc40780717011--heroic-valkyrie-a3ca7f.netlify.app/sitemap.xml
+Sitemap: https://heroic-valkyrie-a3ca7f.netlify.app/sitemap.xml
