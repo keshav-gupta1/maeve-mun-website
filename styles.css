@@ -1185,3 +1185,10 @@ textarea {
     transition-duration: 0.01ms !important;
   }
 }
+.brand-logo {
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 12px;
+}
