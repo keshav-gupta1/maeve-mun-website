@@ -106,8 +106,11 @@ const initSupabaseAuth = async () => {
 
   if (urlHasParams) {
     try {
-      await supabaseClient.auth.getSessionFromUrl({ storeSession: true });
-      window.history.replaceState({}, document.title, window.location.pathname + window.location.search, window.location.pathname);
+      await supabaseClient.auth.getSessionFromUrl({
+        storeSession: true,
+        redirectTo: window.location.origin
+      });
+      window.history.replaceState({}, document.title, window.location.pathname);
     } catch (error) {
       console.warn("Supabase auth redirect processing failed:", error);
     }
@@ -137,7 +140,7 @@ const signInWithGoogle = async () => {
     const { data, error } = await supabaseClient.auth.signInWithOAuth({
       provider: "google",
       options: {
-        redirectTo: window.location.origin + window.location.pathname
+        redirectTo: window.location.origin
       }
     });
 
